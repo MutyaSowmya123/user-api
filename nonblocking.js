@@ -11,7 +11,10 @@ function delay(ms){
     return new Promise(resolve=>setTimeout(resolve,ms));
 }
 
-app
+app.get("/async",async(req,res)=>{
+    await delay(10000);
+    res.send("This is a non-blocking response using promises after 10 seconds");
+});
 
 app.get("/fast",(req,res)=>{
     res.send("This is a fast response");
