@@ -1,0 +1,16 @@
+meta {
+  name: blocking request
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:3000/block
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
