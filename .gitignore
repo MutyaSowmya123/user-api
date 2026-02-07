@@ -1,2 +1,2 @@
-//node modules to be ignored by git
+# node_modules to be ignored by git
 node_modules
